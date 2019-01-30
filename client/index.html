@@ -1,0 +1,69 @@
+<html>
+    <head>
+            <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    </head>
+    <body>
+           
+            <script src="/socket.io/socket.io.js"></script>
+
+            <script src="/user.js"></script>
+        
+        <input type="text" name="text" id="inpt">
+        <button id="hj">click</button>
+
+        
+<input type="text" id="inpt1">
+<button id="btn">Send</button>
+
+<div>
+    <span> <ul>
+        <li></li>
+    </ul></span>
+</div>
+
+    </body>
+</html>
+
+
+<!-- <div class="sidebar">
+        <div class="sidebar-content1">
+            <span style="color:#4286f4"> NOTIFICATIONS </span>
+            <hr>
+            <div id="notification" style=" width: 220px;height: 250px;overflow-y:auto;">
+                <% for(var i=0;i<notifs.length;i++){
+                if(notifs[i].to === user.username && notifs[i].type === "req"){ %>
+                <div class="notif">
+                    <% if(notifs[i].status === "not_read"){ %>
+                    <a onClick="mark_read('<%= notifs[i].time %>','/users/<%= notifs[i].from %>')" style="text-decoration:none;color:red;"><b><%= notifs[i].body%></b></a>
+                    <% }else{ %>
+                    <a style="text-decoration:none;color:black;"><%= notifs[i].body%></a>
+                    <% } %>
+                </div>
+                <hr>
+                <% }else if(notifs[i].from === user.username && notifs[i].type === "res"){ %>
+                <div class="notif">
+                    <% if(notifs[i].status === "not_read"){ %>
+                    <a onClick="mark_read('<%= notifs[i].time %>','/users/<%= notifs[i].to %>')" style="text-decoration:none;color:red;"><b><%= notifs[i].body%></b></a>
+                    <% }else{ %>
+                    <a style="text-decoration:none;color:black;"><%= notifs[i].body%></a>
+                    <% } %>
+                </div>
+                <hr>
+                <% }} %>
+            </div>
+        </div>
+        <div class="sidebar-content2">
+            <span style="color:#4286f4"> NEW MESSAGES </span>
+            <hr>
+            <div id="message" style=" width: 220px;height: 250px;overflow-y:auto;">
+                <% for(var i=0;i<messages.length;i++){
+                if(messages[i].to === user.username){ %>
+                <div class="notif">
+                    <a style="text-decoration:none;color:#4286f4"><b>@<%= messages[i].from%>:</b></a><br>
+                    <a style="text-decoration:none;color:black"><%= messages[i].body %></a>
+                </div>
+                <hr>
+                <% }} %>
+            </div>
+        </div>
+    </div> -->
